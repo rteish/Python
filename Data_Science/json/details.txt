@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "roll_number": "",
+  "section": "",
+  "department": "",
+  "gender": "",
+  "phone_number": "",
+  "email_id": ""
+}

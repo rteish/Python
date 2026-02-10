@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  </head>
+  <body>
+    <h1>OCR Analysis</h1>
+    <div id="log">Running...</div>
+    <script>
+      const { createWorker } = Tesseract;
+      (async () => {
+        const worker = await createWorker("eng");
+        const ret = await worker.recognize("receipt_work.jpg");
+
+        const words = ret.data.words.map((w) => ({
+          text: w.text,
+          bbox: w.bbox,
+          confidence: w.confidence,
+        }));
+
+        // Log everything that looks like a number
+        const matches = words.filter((w) => /\d/.test(w.text));
+
+        const result = JSON.stringify(matches, null, 2);
+        document.body.innerHTML += `<pre id="results">${result}</pre>`;
+        document.getElementById("log").innerText = "Done";
+        await worker.terminate();
+      })();
+    </script>
+  </body>
+</html>

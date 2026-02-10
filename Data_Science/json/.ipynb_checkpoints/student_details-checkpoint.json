@@ -1,0 +1,24 @@
+{
+  "student": {
+    "name": "John Doe",
+    "roll_number": "2024001",
+    "section": "A",
+    "department": "Computer Science",
+    "gender": "Male",
+    "phone_number": "+977-9841234567",
+    "email_id": "john.doe@example.com",
+    "semester": "5th",
+    "year": "2024",
+    "address": {
+      "city": "Kathmandu",
+      "country": "Nepal"
+    },
+    "subjects": [
+      "Data Structures",
+      "Database Management",
+      "Web Development",
+      "Algorithms"
+    ],
+    "cgpa": 3.75
+  }
+}

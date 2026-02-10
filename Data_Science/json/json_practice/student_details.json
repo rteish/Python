@@ -1,0 +1,23 @@
+{
+  "name": "John Doe",
+  "rollNumber": "2024001",
+  "section": "A",
+  "department": "Computer Science",
+  "gender": "Male",
+  "phoneNumber": "+977-9841234567",
+  "emailId": "john.doe@example.com",
+  "semester": "5th",
+  "year": "2024",
+  "address": {
+    "city": "Kathmandu",
+    "country": "Nepal"
+  },
+  "courses": [
+    "Data Structures",
+    "Database Management",
+    "Web Development",
+    "Algorithms"
+  ],
+  "gpa": 3.75,
+  "totalFees": 375.0
+}
